@@ -1,0 +1,465 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+
+.clear{
+    clear: both;
+}
+
+body {
+    font-family: 'Open Sans';
+}
+
+.header {
+    background-color: #4cb1ca;
+    width: 100%;
+    &__main {
+        max-width: 1026px;
+        margin: 0 auto;
+    }
+    &__registr-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__registr-column {
+        display: flex;
+        padding: 20px 0 20px 0;
+        span:first-child{
+            color: #bff2ff;
+            
+        }span:last-child{
+            color:#ffff;
+            i {
+                margin: 0 0 0 5px;
+            }
+        } 
+    }
+    &__language{
+        padding: 0 20px 0 0 ;
+    }
+    &__account {
+        a{
+            position: relative;
+            text-decoration: none;
+            padding: 0 0 0 20px;
+            text-transform: uppercase;
+            font-size: 13px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #ffffff; 
+            opacity: 1;
+        }
+        a:before{
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 3px;
+            width: 1px;
+            height: 11px;
+            background-color: #bff2ff;
+        }
+        a:first-child:before{
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: none;
+        }
+        a:hover{
+            color: #656565;
+            opacity: .5;
+            transition: .3s;
+
+        }
+    }
+}
+
+.leoshop {
+    &__main{
+        max-width: 1026px;
+        margin: 0 auto;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__column{
+        padding: 40px 0 40px 0;
+    }
+    .column-1{
+        display: flex;
+    }
+    &__logo{
+        a {
+            font-family: 'Open Sans';
+            font-size: 36px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -0.025em;
+            color: #656565;
+            padding: 0 60px 0 0;
+        }
+    }
+    &__nav{
+        display: flex;
+        align-items: center;
+        a{
+            font-family: 'Open Sans';
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -0.01em;
+            color: #656565;
+            margin: 0 20px 0 0;
+            
+        }
+        a:hover{
+            color: #c6c6c6;
+            opacity: .5;
+            transition: .3s;
+        }
+    }
+    &__search{
+        display: flex;
+        align-items: center;
+        
+    }
+    .column-2 {
+        display: flex;
+    }
+    &__input{
+        position: relative;
+        padding: 0 20px 0 0;
+        input{
+            width: 174px;
+            height: 29px;
+            background-color: #ffffff;
+            border: 1px solid #c6c6c6;
+            padding: 10px;
+        }
+        input:focus{
+            box-shadow: inset 1px 1px 5px rgba(125, 128, 128, 0.75);
+        }
+        .fa-magnifying-glass {
+            position: absolute;
+            right: 27px;
+            bottom: 7px;
+        }
+        
+    }
+    &__bascet{
+       
+        i {
+            font-size: 20px;
+            line-height: 1.8;
+            color: #ffffff;
+            width: 35px;
+            height: 35px;
+            background-color: #7db122;
+            border-radius: 50%;
+            text-align: center;
+        }
+        span {
+            font-family: 'Open Sans';
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -0.01em;
+            color: #656565;
+        }
+    }
+}
+
+.aluminum {
+    background: url('/image/alum\ bg.png') no-repeat;
+    background-size: cover;
+    &__main {
+        max-width: 1026px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    &__title{
+        display: inline-block;
+        background-color: #52504ac7;
+        color: #ffffff;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    .title1{
+        font-size: 2em;
+        font-weight: 300;
+        margin: 190px 0 0 7px; 
+    }
+    .title2{
+        font-size: 2em;
+        font-weight: 700;
+        margin: 5px 0 190px 15px;
+        
+        
+        
+    }
+    
+    .slider{
+        position: relative;
+        
+        .fa-solid::before{
+            content: '\f104';
+            position: absolute;
+            top: 43%;
+            left: -123px;
+            font-size: 50px;
+            line-height: 1.4;
+            color: #bbbaba;
+            width: 67px;
+            height: 67px;
+            background-color: #f1eeee;
+            border-radius: 50%;
+            text-align: center;
+
+        }
+        .fa-solid::after{
+            content: '\f105';
+            position: absolute;
+            top: 43%;
+            right: -123px;
+            font-size: 50px;
+            line-height: 1.4;
+            color: #bbbaba;
+            width: 67px;
+            height: 67px;
+            background-color: #f1eeee;
+            border-radius: 50%;
+            text-align: center;
+            
+        }
+    }
+    
+
+}
+
+.product{
+    padding: 50px 0 0 0;
+    &__main{
+        max-width: 1026px;
+        margin: 0 auto;
+        h2{
+            font-size: 24px;
+            line-height: 1.2;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: -0.01em;
+            color: #635f57;
+            
+        }
+    }
+    // Общий грид
+    &__row{
+        display: flex;
+    }
+    &__column{
+        flex: 50%;
+    }
+    // Грид товаров
+    &__row-item{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__column-item{
+        padding: 10px;
+        flex: 00 33.333%;
+    }
+    // грид 
+    &__glass-row{
+        display: flex;
+    }
+    &__glass-col{
+        flex: 70% 30%;
+    }
+    &__glass{
+        margin: 0 0 20px 0;
+        .img{
+            width: 228px;
+            height: 200px;
+            background: url('/image/glass1.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            border: 4px solid #e6e4e4;
+        }
+        
+        div{
+            padding: 5px 0 5px 0;
+        }
+        h2{
+            font-size: 1.4em;
+            color: #7db122;
+        }
+    }
+    .glass:hover{
+        box-shadow: 1px 1px 10px 5px  #cec9c9;
+    }
+    .fa-basket-shopping{
+        margin: 7px 20px 0 13px;
+        font-size: 20px;
+        line-height: 2;
+        color: #ffffff;
+        width: 40px;
+        height: 40px;
+        background-color: #7db122;
+        border-radius: 50%;
+        text-align: center;
+    }
+    &__featuded{
+        position: relative;
+        background: url('/image/FEATUDED.png');
+        background-size: contain;
+        border-top: 4px solid #4cb1ca;
+        text-align: center;
+        width: 233px;
+        height: 445px;
+        background-color: #ffffff;
+        margin: 0 0 0 20px;
+        
+        button{
+            position: absolute;
+            bottom: 30px;
+            left: 58px;
+            background-color: #4cb1ca;
+            color: #f1eeee;
+            padding: 10px 20px;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 400;
+            
+        }
+        button:hover{
+            background: #7db122;
+        }
+        
+        
+    }
+    &__dot{
+        margin: 0 0 0 20%;
+        
+        
+    }
+    &__dots{
+        display: inline-block;
+        margin: 20px ;
+        width: 11px;
+        height: 11px;
+        background-color: #4cb1ca;
+        border-radius: 50%;
+    }
+    .dots:hover{
+        background:#7db122;
+    }
+    // вернуться сюда!!!!
+    
+    &__singup{
+        width: 233px;
+        height: 281px;
+        background-color: #ffffff;
+        border-top: 4px solid #4cb1ca;
+        text-align: center;
+        margin: 50px 0 0 20px;
+        h2{
+            margin: 20px 0 18px 0;
+        }
+        p{
+           position: relative; 
+        }
+        p:after{
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 74px;
+            width: 85px;
+            height: 4px;
+            background-color: #ededed;
+        }
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        input{
+            margin: 20px 0 20px 11%;
+            width: 185px;
+            height: 29px;
+            background-color: #ffffff;
+            border: 1px solid rgba(198,198,198,0.49);
+        }
+        button{
+            bottom: 30px;
+            left: 58px;
+            background-color: #7db122;
+            color: #f1eeee;
+            padding: 10px 20px;
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 400;
+        }
+        button:hover{
+            background: #4cb1ca;
+
+        }
+    }
+}
+
+.contact{
+    background: #4cb1ca;
+    &__main{
+        max-width: 1026px;
+        margin: 0 auto;
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0 30px 0;
+    }
+    &__column{
+        flex: 0 0 50%;
+    }
+    .fa-solid{
+        font-size: 30px;
+        line-height: 2.2;
+        text-align: center;
+        text-transform: uppercase;
+        color: #39a0b9;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: #ffffff;
+    }
+    span{
+        font-size: 21px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding: 0 0 0 15px;
+    }
+}
