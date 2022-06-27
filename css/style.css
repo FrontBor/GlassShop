@@ -298,9 +298,9 @@ body {
     display: -ms-flexbox;
     display: flex; }
   .product__column {
-    -webkit-box-flex: 50%;
-    -ms-flex: 50%;
-    flex: 50%; }
+    -webkit-box-flex: 80%;
+    -ms-flex: 80% 20%;
+    flex: 80% 20%; }
   .product__row-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -310,9 +310,9 @@ body {
     justify-content: space-between; }
   .product__column-item {
     padding: 10px;
-    -webkit-box-flex: 00;
-    -ms-flex: 00 33.333%;
-    flex: 00 33.333%; }
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333%;
+    flex: 0 0 33.333%; }
   .product__glass-row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -324,7 +324,6 @@ body {
   .product__glass {
     margin: 0 0 20px 0; }
     .product__glass .img {
-      width: 228px;
       height: 200px;
       background: url("/image/glass1.jpg");
       background-size: contain;
@@ -382,7 +381,6 @@ body {
   .product .dots:hover {
     background: #7db122; }
   .product__singup {
-    width: 233px;
     height: 281px;
     background-color: #ffffff;
     border-top: 4px solid #4cb1ca;
@@ -467,6 +465,7 @@ body {
     padding: 0 0 0 15px; }
 
 .contact-us {
+  padding: 0 0 50px 0;
   background: #39a0b9; }
   .contact-us h2 {
     font-size: 20px;

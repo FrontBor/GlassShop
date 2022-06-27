@@ -279,7 +279,7 @@ body {
         display: flex;
     }
     &__column{
-        flex: 50%;
+        flex: 80% 20%;
     }
     // Грид товаров
     &__row-item{
@@ -288,7 +288,7 @@ body {
     }
     &__column-item{
         padding: 10px;
-        flex: 00 33.333%;
+        flex: 0 0 33.333%;
     }
     // грид 
     &__glass-row{
@@ -300,7 +300,7 @@ body {
     &__glass{
         margin: 0 0 20px 0;
         .img{
-            width: 228px;
+           
             height: 200px;
             background: url('/image/glass1.jpg');
             background-size: contain;
@@ -378,7 +378,7 @@ body {
     // вернуться сюда!!!!
     
     &__singup{
-        width: 233px;
+        
         height: 281px;
         background-color: #ffffff;
         border-top: 4px solid #4cb1ca;
@@ -465,6 +465,7 @@ body {
 }
 
 .contact-us{
+    padding: 0 0 50px 0;
     background: #39a0b9;
     h2{
         font-size: 20px;
